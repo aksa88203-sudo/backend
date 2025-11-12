@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Alynto</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    header {
+      background-color: #3e2723;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #ffcc80;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #ffcc80;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      height: 80vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1551024601-bec78aea704b") center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ffcc80;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .menu {
+      padding: 50px 10%;
+      background-color: #2e2e2e;
+      text-align: center;
+    }
+
+    .menu h2 {
+      color: #ffcc80;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .menu-card {
+      background-color: #3e2723;
+      width: 250px;
+      margin: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      transition: 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-card h3 {
+      padding: 10px;
+      color: #ffcc80;
+    }
+
+    .menu-card p {
+      padding: 0 10px 10px;
+      color: #fff;
+    }
+
+    .form-section {
+      background-color: #1a1a1a;
+      padding: 50px 10%;
+      text-align: center;
+    }
+
+    .form-section h2 {
+      color: #ffcc80;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      background-color: #3e2723;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    form button {
+      background-color: #ffcc80;
+      color: #1a1a1a;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background-color: #ffb74d;
+    }
+
+    footer {
+      background-color: #3e2723;
+      color: #ffcc80;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .login-btn {
+      background-color: #ffcc80;
+      color: #1a1a1a;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .login-btn:hover {
+      background-color: #ffb74d;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cafe Alynto</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a> 
+      <a href="#form" class="login-btn">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Welcome to Cafe Alynto</h2>
+    <p>Experience the perfect taste of steaks, coffee & warmth</p>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Our Special Steaks</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.v89xfhmh6bMGzQktRLkN3AHaE7?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Steak">
+        <h3>Grilled Beef Steak</h3>
+        <p>Juicy and tender steak served with our secret sauce.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.nI4Yd5yWN7289mKOyKq5NQHaIN?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chicken Steak">
+        <h3>Chicken Steak</h3>
+        <p>Perfectly grilled chicken steak with a smoky flavor.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://th.bing.com/th/id/R.63d253ef4f6c6a415471f52e2a44cc27?rik=TF1WG15%2fF%2bSZuw&pid=ImgRaw&r=0" alt="T-Bone Steak">
+        <h3>T-Bone Steak</h3>
+        <p>Classic T-bone steak served with garlic butter and herbs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section" id="form">
+    <h2>Join Cafe Alynto</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />git init
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="text" placeholder="Address" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Cafe Alynto | Crafted with ❤ & Coffee</p>
+  </footer>
+</body>
+</html>
